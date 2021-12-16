@@ -25,6 +25,9 @@ class App extends React.Component {
     if (this.state.dice) {
       this.removeDice();
     }
+    if (this.state.winner) {
+      setTimeout(this.reset, 5000);
+    }
   }
 
   removeDice = () => {
@@ -98,15 +101,9 @@ class App extends React.Component {
         this.state.pointsToWin
       ) {
         if (i === 0) {
-          this.setState({ winner: 2 }, () => {
-            console.log(this.state.winner);
-            this.reset();
-          });
+          this.setState({ winner: 2 }, () => {});
         } else {
-          this.setState({ winner: 1 }, () => {
-            console.log(this.state.winner);
-            this.reset();
-          });
+          this.setState({ winner: 1 }, () => {});
         }
       }
     }
