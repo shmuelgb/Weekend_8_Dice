@@ -113,7 +113,7 @@ class App extends React.Component {
   };
 
   reset = () => {
-    // window.location.reload();
+    window.location.reload();
   };
 
   setPointsToWin = (event) => {
