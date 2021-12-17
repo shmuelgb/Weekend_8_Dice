@@ -20,7 +20,7 @@
 }
 
 .active {
-  background-color: #fcfdfe;
+  background-color: #ececfc;
   opacity: 1;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .global-score {
-  font-size: 40px;
+  font-size: 60px;
   color: red;
 }
 

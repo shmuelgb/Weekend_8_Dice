@@ -5,7 +5,7 @@ import "./App.css";
 
 class App extends React.Component {
   state = {
-    pointsToWin: 50,
+    pointsToWin: 21,
     dice: null,
     activePlayer: 1,
     winner: null,
@@ -122,13 +122,13 @@ class App extends React.Component {
       <div className="App">
         <Player
           isTurn={this.state.activePlayer === 1}
-          className="player player1"
+          className="player1"
           currentScore={this.state.players[0].currentScore}
           globalScore={this.state.players[0].globalScore}
         />
         <Player
           isTurn={this.state.activePlayer === 2}
-          className="player player2"
+          className="player2"
           currentScore={this.state.players[1].currentScore}
           globalScore={this.state.players[1].globalScore}
         />
